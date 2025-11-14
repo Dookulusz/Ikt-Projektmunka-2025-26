@@ -44,3 +44,8 @@
     - látványterv:
 
      *https://templatemo.com/live/templatemo_596_electric_xtra*
+
+
+- **Github**
+    - main: *https://github.com/Dookulusz/Ikt-Projektmunka-2025-26.git*
+    
