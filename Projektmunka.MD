@@ -41,9 +41,13 @@
 
     - szöveges tartalom: még nincs.
     - képanyag még nincs, de már a neten fent van
-    - látványterv:
 
-     *https://templatemo.com/live/templatemo_596_electric_xtra*
+    - látványterv:
+        - ![főoldal képe](image.png)
+        - ![menüpontok a navbaron kívül](image-1.png)
+        - ![különböző szöveges anyagok elrendezése, de a monotonítást elkerülve ezek elhelyezkedése változhat majd.](image-2.png)
+        - ![Szakértői segítség menüpont elképzelése](image-3.png)
+
 
 
 - **Github**
