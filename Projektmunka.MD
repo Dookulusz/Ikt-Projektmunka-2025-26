@@ -43,10 +43,10 @@
     - képanyag még nincs, de már a neten fent van
 
     - látványterv:
-        - ![főoldal képe](image.png)
-        - ![menüpontok a navbaron kívül](image-1.png)
-        - ![különböző szöveges anyagok elrendezése, de a monotonítást elkerülve ezek elhelyezkedése változhat majd.](image-2.png)
-        - ![Szakértői segítség menüpont elképzelése](image-3.png)
+        - ![főoldal képe](/Látványtervek/Picture1.jpg)
+        - ![menüpontok a navbaron kívül](/Látványtervek/Picture2.jpg)
+        - ![különböző szöveges anyagok elrendezése, de a monotonítást elkerülve ezek elhelyezkedése változhat majd.](/Látványtervek/Picture3.jpg)
+        - ![Szakértői segítség menüpont elképzelése](/Látványtervek/Picture4.jpg)
 
 
 
