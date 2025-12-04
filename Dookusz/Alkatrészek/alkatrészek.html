@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="alkatrészek.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="video-fixed-bg">
+        <video autoplay muted loop playsinline class="videnyofix">
+            <source src="../video/Háttér.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Dobaco</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Alkatrészek/alkatrészek.html">Alkatrészek</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Kiegészítők/kiegészítők.html">Kiegészítők</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Rakd össze magadnak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Szakértői segítség</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Rólunk</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h1>Alkatrészek</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <ul class="list-group" id="választó">
+                    <li id="főlistaelső">Alkatrészek</li>
+                    <li id="proci"><button onclick="proci()" type="button" class="btn">Processzor</button></li>
+                    <li id="alaplap"><button type="button" class="btn">Alaplap</button></li>
+                    <li id="storage"><button type="button" class="btn">Tárhely</button></li>
+                    <li id="psu"><button type="button" class="btn">Tápegység</button></li>
+                    <li id="case"><button type="button" class="btn">Gépház</button></li>
+                    <li id="gpu"><button type="button" class="btn">Videokártya</button></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row">
+                <div class="col keret">
+                    <img class="img-fluid" id="kep" src="../Kepek/Processzor/Ryzen/Ryzen 7 9800X3D.jpg"
+                        alt="Ryzen Processzor">
+                    <p id="nev">AMD Ryzen 7 9800X3D</p>
+                    <p id="ar">196 279 Ft</p>
+                    <button type="button" class="btn bg-success">Kosárba</button>
+                </div>
+                <div class="col keret">
+                    <img class="img-fluid" src="../Kepek/Processzor/Ryzen/Ryzen 7 9800X3D.jpg" alt="Ryzen Processzor">
+                    <p>AMD Ryzen 7 9800X3D</p>
+                    <button type="button" class="btn bg-success">Kosárba</button>
+                </div>
+                <div class="col keret">
+                    <img class="img-fluid" src="../Kepek/Processzor/Ryzen/Ryzen 7 9800X3D.jpg" alt="Ryzen Processzor">
+                    <p>AMD Ryzen 7 9800X3D</p>
+                    <button type="button" class="btn bg-success">Kosárba</button>
+                </div>
+                <div class="col keret">
+                    <img class="img-fluid" src="../Kepek/Processzor/Ryzen/Ryzen 7 9800X3D.jpg" alt="Ryzen Processzor">
+                    <p>AMD Ryzen 7 9800X3D</p>
+                    <button type="button" class="btn bg-success">Kosárba</button>
+                </div>
+                <div class="col keret">
+                    <img class="img-fluid" src="../Kepek/Processzor/Ryzen/Ryzen 7 9800X3D.jpg" alt="Ryzen Processzor">
+                    <p>AMD Ryzen 7 9800X3D</p>
+                    <button type="button" class="btn bg-success">Kosárba</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="alkatrészek.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

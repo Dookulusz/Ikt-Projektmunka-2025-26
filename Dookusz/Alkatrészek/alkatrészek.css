@@ -1,0 +1,51 @@
+body {
+    color: aliceblue;
+}
+
+/*Ki ne merd tölölni mert ennek köszönhetően reszponzív a háttér*/
+.video-fixed-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.videnyofix {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+/*És itt van vége a háttér formázásának*/
+
+.navbar {
+    background-color: rgb(180, 75, 0);
+}
+
+#választó {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgb(180, 75, 0);
+    border-radius: 10px;
+    padding: 40px;
+    backdrop-filter: blur(10px);
+    list-style: none;
+}
+
+.keret {
+    padding: 20px;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgb(180, 75, 0);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
