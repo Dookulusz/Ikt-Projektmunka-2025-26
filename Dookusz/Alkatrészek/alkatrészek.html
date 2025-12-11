@@ -31,9 +31,6 @@
                         <a class="nav-link" href="../Alkatrészek/alkatrészek.html">Alkatrészek</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../Kiegészítők/kiegészítők.html">Kiegészítők</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#">Rakd össze magadnak</a>
                     </li>
                     <li class="nav-item">
@@ -47,94 +44,110 @@
         </div>
     </nav>
 
-    <h1>Alkatrészek</h1>
+    <h1 id="hedvig">Alkatrészek</h1>
     <div class="container-fluid">
         <div class="row">
             <div class="col">
-                <ul class="list-group" id="választó">
-                    <li id="főlistaelső">Alkatrészek</li>
-                    <li id="proci"><button onclick="proci()" type="button" class="btn">Processzor</button></li>
-                    <li id="alaplap"><button type="button" class="btn">Alaplap</button></li>
-                    <li id="storage"><button type="button" class="btn">Tárhely</button></li>
-                    <li id="psu"><button type="button" class="btn">Tápegység</button></li>
-                    <li id="case"><button type="button" class="btn">Gépház</button></li>
-                    <li id="gpu"><button type="button" class="btn">Videokártya</button></li>
+                <ul class="list-inline text-center" id="választó">
+                    <li class="list-inline-item" id="proci"><button onclick="proci()" type="button"
+                            class="btn">Processzor</button></li>
+                    <li class="list-inline-item" id="alaplap"><button onclick="alaplap()" type="button"
+                            class="btn">Alaplap</button></li>
+                    <li class="list-inline-item" id="storage"><button onclick="storage()" type="button"
+                            class="btn">Tárhely</button></li>
+                    <li class="list-inline-item" id="psu"><button onclick="psu()" type="button"
+                            class="btn">Tápegység</button></li>
+                    <li class="list-inline-item" id="case"><button onclick="gephaz()" type="button"
+                            class="btn">Gépház</button></li>
+                    <li class="list-inline-item" id="gpu"><button onclick="gpu()" type="button"
+                            class="btn">Videokártya</button></li>
+                    <li class="list-inline-item" id="ram"><button onclick="ram()" type="button"
+                            class="btn">Memória</button></li>
+                    <li class="list-inline-item" id="acc"><button onclick="accessories()" type="button"
+                            class="btn">Kiegészítők</button></li>
                 </ul>
             </div>
         </div>
         <div class="col">
-            <div class="row">
-                <div class="col keret">
-                    <img class="img-fluid" id="kep" src="../Kepek/Processzor/Ryzen/Ryzen 7 9800X3D.jpg"
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-5 col-md-4 col-lg-2 keret" id="1">
+                    <img class="img-fluid" id="kep1" src="../Kepek/Processzor/Ryzen/Ryzen 9 9950x3d.png"
                         alt="Ryzen Processzor">
-                    <p id="nev">AMD Ryzen 7 9800X3D</p>
-                    <p id="ar">196 279 Ft</p>
+                    <p id="nev1">Ryzen 9 9950X3d</p>
+                    <p id="ar1">269 990 Ft</p>
                     <button type="button" class="btn bg-success">Kosárba</button>
                 </div>
-                <div class="col keret">
-                    <img class="img-fluid" src="../Kepek/Processzor/Ryzen/Ryzen 7 9800X3D.jpg" alt="Ryzen Processzor">
-                    <p>AMD Ryzen 7 9800X3D</p>
+                <div class="col-12 col-sm-5 col-md-4  col-lg-2 keret" id="2">
+                    <img class="img-fluid" id="kep2" src="../Kepek/Processzor/Ryzen/Ryzen 9 9950x.png"
+                        alt="Ryzen Processzor">
+                    <p id="nev2">Ryzen 9 9950X</p>
+                    <p id="ar2">207 650 Ft</p>
                     <button type="button" class="btn bg-success">Kosárba</button>
                 </div>
-                <div class="col keret">
-                    <img class="img-fluid" src="../Kepek/Processzor/Ryzen/Ryzen 7 9800X3D.jpg" alt="Ryzen Processzor">
-                    <p>AMD Ryzen 7 9800X3D</p>
+                <div class="col-12 col-sm-5 col-md-4 col-lg-2 keret" id="3">
+                    <img class="img-fluid" id="kep3" src="../Kepek/Processzor/Ryzen/Ryzen 9 9900x3d.jpg"
+                        alt="Ryzen Processzor">
+                    <p id="nev3">Ryzen 9 9900X3D</p>
+                    <p id="ar3">226 200 Ft</p>
                     <button type="button" class="btn bg-success">Kosárba</button>
                 </div>
-                <div class="col keret">
-                    <img class="img-fluid" src="../Kepek/Processzor/Ryzen/Ryzen 7 9800X3D.jpg" alt="Ryzen Processzor">
-                    <p>AMD Ryzen 7 9800X3D</p>
+                <div class="col-12 col-sm-5 col-md-4 col-lg-2 keret" id="4">
+                    <img class="img-fluid" id="kep4" src="../Kepek/Processzor/Ryzen/Ryzen 9 9900x3d.png"
+                        alt="Ryzen Processzor">
+                    <p id="nev4">Ryzen 9 9900X</p>
+                    <p id="ar4">152 941 Ft</p>
                     <button type="button" class="btn bg-success">Kosárba</button>
                 </div>
-                <div class="col keret">
-                    <img class="img-fluid" src="../Kepek/Processzor/Ryzen/Ryzen 7 9800X3D.jpg" alt="Ryzen Processzor">
-                    <p>AMD Ryzen 7 9800X3D</p>
+                <div class="col-12 col-sm-5 col-md-4 col-lg-2 keret" id="5">
+                    <img class="img-fluid" id="kep5" src="/Kepek/Processzor/Ryzen/Ryzen 9 7950x.png"
+                        alt="Ryzen Processzor">
+                    <p id="nev5">Ryzen 9 7950X</p>
+                    <p id="ar5">154 700 Ft</p>
+                    <button type="button" class="btn bg-success">Kosárba</button>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-5 col-md-4 col-lg-2 keret" id="6">
+                    <img class="img-fluid" id="kep7" src="../Kepek/Processzor/Intel/i914900k.jpg"
+                        alt="Intel Processzor">
+                    <p id="nev7">Intel Core i9-14900K</p>
+                    <p id="ar7">183 225 Ft</p>
+                    <button type="button" class="btn bg-success">Kosárba</button>
+                </div>
+                <div class="col-12 col-sm-5 col-md-4 col-lg-2 keret" id="7">
+                    <img class="img-fluid" id="kep8" src="../Kepek/Processzor/Intel/i9-1400ks.jpg"
+                        alt="Intel Processzor">
+                    <p id="nev8">Intel Core i9-14900KF</p>
+                    <p id="ar8">178 600 Ft</p>
+                    <button type="button" class="btn bg-success">Kosárba</button>
+                </div>
+                <div class="col-12 col-sm-5 col-md-4 col-lg-2 keret" id="8">
+                    <img class="img-fluid" id="kep9" src="../Kepek/Processzor/Intel/i9-1400ks.jpg"
+                        alt="Intel Processzor">
+                    <p id="nev9">Intel Core i9-14900KS</p>
+                    <p id="ar9">263 900 Ft</p>
+                    <button type="button" class="btn bg-success">Kosárba</button>
+                </div>
+                <div class="col-12 col-sm-5 col-md-4 col-lg-2 keret" id="9">
+                    <img class="img-fluid" id="kep10" src="../Kepek/Processzor/Intel/i7.jpg" alt="Intel Processzor">
+                    <p id="nev10">Intel Core i7-14700K</p>
+                    <p id="ar10">138 500 Ft</p>
+                    <button type="button" class="btn bg-success">Kosárba</button>
+                </div>
+                <div class="col-12 col-sm-5 col-md-4 col-lg-2 keret" id="10">
+                    <img class="img-fluid" id="kep6" src="../Kepek/Processzor/Intel/i7.jpg" alt="Intel Processzor">
+                    <p id="nev6">Intel Core i7-14700KF</p>
+                    <p id="ar6">128 100 Ft</p>
                     <button type="button" class="btn bg-success">Kosárba</button>
                 </div>
             </div>
         </div>
     </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <script src="alkatrészek.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
