@@ -1,6 +1,20 @@
+#h1{
+    display: flex;
+    margin-left: 925px;
+    margin-top: 400px;
+    color: grey;
+}
+#tableinfo{
+    display: flex;
+    margin-left: 925px;
+}
 #info{
+    width: 800px;
+    height: 200px;
+}
+#info, tr, td{
     border: solid black 2px;
-    width: 300px;
+    margin-left: 570px;
 }
 #tovabb{
     border-radius: 10%;
@@ -18,7 +32,7 @@
 #button{
     display: flex;
     margin-left: 925px;
-    margin-top: 800px;
+    margin-top: 350px;
 }
 #dokakep{
     width: 20px;
@@ -26,4 +40,13 @@
 }
 #divinfo{
     border: solid black 1.5px;
+}
+#info2{
+    
+}
+#dobaco, #leiras{
+    width: 800px;
+    border: solid black 2px;
+    border-radius: 2.5%;
+    margin-left: 570px;
 }
