@@ -1,0 +1,29 @@
+#info{
+    border: solid black 2px;
+    width: 300px;
+}
+#tovabb{
+    border-radius: 10%;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom right, rgb(52, 52, 212), rgb(238, 48, 48));
+}
+#button{
+    display: flex;
+    margin-left: 925px;
+    margin-top: 800px;
+}
+#dokakep{
+    width: 20px;
+    height: 20px;
+}
+#divinfo{
+    border: solid black 1.5px;
+}
