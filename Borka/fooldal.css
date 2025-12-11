@@ -1,3 +1,6 @@
+body{
+    color: white;
+}
 #h1{
     display: flex;
     margin-left: 925px;
@@ -50,4 +53,58 @@
     width: 50px;
     height: 50px;
     border: solid grey 2px;
+}
+#cim{
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 650px;
+    height: 45px;
+    display: flex;
+    border: solid black 2px;
+
+}
+#rolunk1{
+    display: flex;
+    margin-left: 620px;
+    width: 650px;
+    margin-bottom: 100px;
+    margin-top: 0px;
+}
+#rolunk2{
+    display: flex;
+    height: 500px;
+    margin-left: 670px;
+    width: 800px;
+    margin-bottom: 100px;
+    margin-top: -100px;
+}
+#rolunktabla{
+    margin-top: 400px;
+    margin-left: 0px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    width: 600px;
+    height: 150px;
+    border: solid black 2px;
+}
+.video-fixed-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.videnyofix {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
 }
