@@ -1,0 +1,22 @@
+számítógép alkatrészek:
+
+    main:
+        - gépház
+        - alaplap
+        - memória
+        - tárhely
+        - videokártya
+        - processzor
+        - tápegység
+    
+    kiegészytők:
+        - processzor hűtő
+        - hűtőpaszta
+        - kábelek:
+            - usb
+            - jack
+            - táp
+        - átalakítók
+        - venitillátorok
+        - szerszámok:
+            - stb...
