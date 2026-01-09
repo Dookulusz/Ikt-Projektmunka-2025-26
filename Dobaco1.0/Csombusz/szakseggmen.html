@@ -10,17 +10,38 @@
     <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
-    <nav>
-        <ul class="navbar">
-            <li class="navbarcim">DoBaCo</li>
-            <li><a href="">Főoldal</a></li>
-            <li><a href="">Alkatrészek</a></li>
-            <li><a href="">Kiegészítők</a></li>
-            <li><a href="">Rakd össze magad</a></li>
-            <li><a href="">Szakértői segítség menüpont</a></li>
-            <li><a href="">Rólunk</a></li>
-        </ul>
+    <div class="video-fixed-bg">
+        <video autoplay muted loop playsinline class="videnyofix">
+            <source src="../Dookusz/video/Háttér.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../Borka/fooldal.html">Dobaco</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Alkatrészek/alkatrészek.html">Alkatrészek</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../Csombusz/rakdöszmag.html">Rakd össze magadnak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../Csombusz/szakseggmen.html">Szakértői segítség</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../Borka/fooldal.html#leiras">Rólunk</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
+
     <div class="plachold">
         <textarea name="segítség" id="segítség" cols="100" rows="10"
         placeholder="Ha panasza van, vagy csupán segítséget akar kérni, akkor it tud!"></textarea>
