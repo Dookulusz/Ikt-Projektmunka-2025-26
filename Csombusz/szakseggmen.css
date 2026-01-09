@@ -1,4 +1,33 @@
+body {
+    color: aliceblue;
+}
 
+/*Ki ne merd tölölni mert ennek köszönhetően reszponzív a háttér*/
+.video-fixed-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.videnyofix {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.navbar {
+    background-color: rgb(180, 75, 0);
+}
 
 div{
     text-align: center;
