@@ -31,6 +31,14 @@ body {
     background-color: rgb(180, 75, 0);
 }
 
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: rgb(73, 73, 73);
+}
+
 #választó {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgb(180, 75, 0);
@@ -58,4 +66,25 @@ body {
 h1 {
     text-align: center;
     margin: 10px;
+}
+
+.btn {
+    color: white;
+}
+
+.btn:hover {
+    color: gray;
+} 
+
+#termek {
+    float: right;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+#kep11 {
+    width: 80%;
+    height: auto;
 }

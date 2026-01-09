@@ -1,5 +1,4 @@
 var alkatrészek = {
-
     //AMD PROCESSZOROK: 
     ryzen99950x3d: {
         kep: '../Kepek/Processzor/Ryzen/Ryzen 9 9950x3d.png',
@@ -84,7 +83,7 @@ function proci() {
 
     for (var i = 0; i < procinevek.length; i++) {
         var procinev = procinevek[i];
-        var pocok = alkatrészek[procinev];
+        var pocok = alkatrészek.amd[procinev];
 
         var index = i + 1;
 
@@ -569,7 +568,17 @@ function accessories() {
     document.getElementById("hedvig").innerHTML = "Kiegészítők"
 }
 
+var darab = 0;
 
+function gomb() {
+    darab = darab + 1;
+    window.alert("Termék hozzáadása a kosárba")
+    document.getElementById("termek").innerHTML = "Kosár: " + darab;
+}
+
+function megrendel() {
+    window.alert("Köszünjük a rendelését!")
+}
 
 
 
