@@ -25,7 +25,7 @@ var alkatrészek = {
     },
 
     ryzen97950x: {
-        kep: '/Kepek/Processzor/Ryzen/Ryzen 9 7950x.png',
+        kep: '../Kepek/Processzor/Ryzen/Ryzen 9 7950x.png',
         nev: 'Ryzen 9 7950X',
         ar: '154 700 Ft'
     },
@@ -79,32 +79,6 @@ var procinevek = [
     "inteli714700kf",
 ];
 
-function proci() {
-
-    for (var i = 0; i < procinevek.length; i++) {
-        var procinev = procinevek[i];
-        var pocok = alkatrészek.amd[procinev];
-
-        var index = i + 1;
-
-        var felkepellek = document.getElementById('kep' + index);
-        var nevetgelek = document.getElementById('nev' + index);
-        var aronaluladok = document.getElementById('ar' + index);
-
-        if (felkepellek) felkepellek.src = pocok.kep;
-        if (nevetgelek) nevetgelek.innerHTML = pocok.nev;
-        if (aronaluladok) aronaluladok.innerHTML = pocok.ar;
-    }
-
-    for (var i = 0; i <= 10; i++) {
-        if (i > 5) {
-            document.getElementById(i).style.display = "";
-        }
-    }
-
-    document.getElementById("hedvig").innerHTML = "Alkatrészek"
-}
-
 var alkatrészek1 = {
     //Alaplap
 
@@ -141,7 +115,6 @@ var alkatrészek1 = {
 
 };
 
-
 var alaplapnevek = [
     "gigab650",
     "msimagz890w",
@@ -150,33 +123,6 @@ var alaplapnevek = [
     "msib760gpw",
 ];
 
-
-
-
-function alaplap() {
-    for (var i = 0; i < alaplapnevek.length; i++) {
-        var alaplapnev = alaplapnevek[i];
-        var pocok = alkatrészek1[alaplapnev];
-
-        var index = i + 1;
-
-        var felkepellek = document.getElementById('kep' + index);
-        var nevetgelek = document.getElementById('nev' + index);
-        var aronaluladok = document.getElementById('ar' + index);
-
-        if (felkepellek) felkepellek.src = pocok.kep;
-        if (nevetgelek) nevetgelek.innerHTML = pocok.nev;
-        if (aronaluladok) aronaluladok.innerHTML = pocok.ar;
-    }
-
-    for (var i = 0; i <= 10; i++) {
-        if (i > 5) {
-            document.getElementById(i).style.display = "none";
-        }
-    }
-
-    document.getElementById("hedvig").innerHTML = "Alkatrészek"
-}
 
 var alkatrészek2 = {
     //storage
@@ -219,30 +165,6 @@ storagenevek = [
     "weste1tb",
     "kingstona400",
 ];
-function storage() {
-    for (var i = 0; i < storagenevek.length; i++) {
-        var storagenev = storagenevek[i];
-        var pocok = alkatrészek2[storagenev];
-
-        var index = i + 1;
-
-        var felkepellek = document.getElementById('kep' + index);
-        var nevetgelek = document.getElementById('nev' + index);
-        var aronaluladok = document.getElementById('ar' + index);
-
-        if (felkepellek) felkepellek.src = pocok.kep;
-        if (nevetgelek) nevetgelek.innerHTML = pocok.nev;
-        if (aronaluladok) aronaluladok.innerHTML = pocok.ar;
-    }
-
-    for (var i = 0; i <= 10; i++) {
-        if (i > 5) {
-            document.getElementById(i).style.display = "none";
-        }
-    }
-
-    document.getElementById("hedvig").innerHTML = "Alkatrészek"
-}
 
 alkatrészek3 = {
     bequiet850: {
@@ -282,31 +204,6 @@ psunevek = [
     "deepcool750",
 ];
 
-function psu() {
-    for (var i = 0; i < psunevek.length; i++) {
-        var psunev = psunevek[i];
-        var psuadat = alkatrészek3[psunev];
-
-        var index = i + 1;
-
-        var felkepellek = document.getElementById('kep' + index);
-        var nevetgelek = document.getElementById('nev' + index);
-        var aronaluladok = document.getElementById('ar' + index);
-
-        if (felkepellek) felkepellek.src = psuadat.kep;
-        if (nevetgelek) nevetgelek.innerHTML = psuadat.nev;
-        if (aronaluladok) aronaluladok.innerHTML = psuadat.ar;
-    }
-
-    for (var i = 0; i <= 10; i++) {
-        if (i > 5) {
-            document.getElementById(i).style.display = "none";
-        }
-    }
-
-    document.getElementById("hedvig").innerHTML = "Alkatrészek"
-}
-
 alkatrészek5 = {
     nzxt1: {
         kep: '../Kepek/Gépház/1-es.jpg',
@@ -342,32 +239,6 @@ casenevek = [
     "asuspccase",
     "bequietcase",
 ];
-
-
-function gephaz() {
-    for (var i = 0; i < casenevek.length; i++) {
-        var gephaznevekk = casenevek[i];
-        var pocok = alkatrészek5[gephaznevekk];
-
-        var index = i + 1;
-
-        var felkepellek = document.getElementById('kep' + index);
-        var nevetgelek = document.getElementById('nev' + index);
-        var aronaluladok = document.getElementById('ar' + index);
-
-        if (felkepellek) felkepellek.src = pocok.kep;
-        if (nevetgelek) nevetgelek.innerHTML = pocok.nev;
-        if (aronaluladok) aronaluladok.innerHTML = pocok.ar;
-    }
-
-    for (var i = 0; i <= 10; i++) {
-        if (i > 5) {
-            document.getElementById(i).style.display = "none";
-        }
-    }
-
-    document.getElementById("hedvig").innerHTML = "Alkatrészek"
-}
 
 var alkatrészek4 = {
     rtx5070ti: {
@@ -409,32 +280,6 @@ var gpunevek = [
     "rtx5080",
     "rtx5090"
 ];
-
-function gpu() {
-    for (var i = 0; i < gpunevek.length; i++) {
-        var gpunev = gpunevek[i];
-        var gpuadat = alkatrészek4[gpunev];
-
-        var index = i + 1;
-
-        var felkepellek = document.getElementById('kep' + index);
-        var nevetgelek = document.getElementById('nev' + index);
-        var aronaluladok = document.getElementById('ar' + index);
-
-        if (felkepellek) felkepellek.src = gpuadat.kep;
-        if (nevetgelek) nevetgelek.innerHTML = gpuadat.nev;
-        if (aronaluladok) aronaluladok.innerHTML = gpuadat.ar;
-    }
-
-    for (var i = 0; i <= 10; i++) {
-        if (i > 5) {
-            document.getElementById(i).style.display = "none";
-        }
-    }
-
-    document.getElementById("hedvig").innerHTML = "Alkatrészek"
-}
-
 
 var alkatrészek6 = {
 
@@ -479,33 +324,6 @@ var ramnevek = [
     "gskillddr5"
 ];
 
-function ram() {
-    for (var i = 0; i < ramnevek.length; i++) {
-        var ramnev = ramnevek[i];
-        var ramadat = alkatrészek6[ramnev];
-
-        var index = i + 1;
-
-        var felkepellek = document.getElementById('kep' + index);
-        var nevetgelek = document.getElementById('nev' + index);
-        var aronaluladok = document.getElementById('ar' + index);
-
-        if (felkepellek) felkepellek.src = ramadat.kep;
-        if (nevetgelek) nevetgelek.innerHTML = ramadat.nev;
-        if (aronaluladok) aronaluladok.innerHTML = ramadat.ar;
-    }
-
-    for (var i = 0; i <= 10; i++) {
-        if (i > 5) {
-            document.getElementById(i).style.display = "none";
-        }
-    }
-
-    document.getElementById("hedvig").innerHTML = "Alkatrészek"
-}
-
-
-
 var kiegészítők = {
 
     kabel: {
@@ -543,29 +361,73 @@ var kiegnevek = [
     "hang",
 ];
 
-function accessories() {
-    for (var i = 0; i < kiegnevek.length; i++) {
-        var kiegészítőnev = kiegnevek[i];
-        var kiegészítőadat = kiegészítők[kiegészítőnev];
+function valtoztatas(tömb, lista, cím) {
+
+    for (var i = 0; i < lista.length; i++) {
+        var listanev = lista[i];
+        var pocok = tömb[listanev];
 
         var index = i + 1;
 
-        var felkepellek = document.getElementById('kep' + index);
-        var nevetgelek = document.getElementById('nev' + index);
-        var aronaluladok = document.getElementById('ar' + index);
+        var kep = document.getElementById('kep' + index);
+        var nev = document.getElementById('nev' + index);
+        var ar = document.getElementById('ar' + index);
 
-        if (felkepellek) felkepellek.src = kiegészítőadat.kep;
-        if (nevetgelek) nevetgelek.innerHTML = kiegészítőadat.nev;
-        if (aronaluladok) aronaluladok.innerHTML = kiegészítőadat.ar;
+        if (kep) kep.src = pocok.kep;
+        if (nev) nev.innerHTML = pocok.nev;
+        if (ar) ar.innerHTML = pocok.ar;
     }
 
     for (var i = 0; i <= 10; i++) {
-        if (i > 5) {
+        if (i > 5 && tömb != alkatrészek) {
             document.getElementById(i).style.display = "none";
+        }
+        else if (tömb == alkatrészek && i > 5) {
+            document.getElementById(i).style.display = "";
         }
     }
 
-    document.getElementById("hedvig").innerHTML = "Kiegészítők"
+    document.getElementById("hedvig").innerHTML = cím;
+}
+
+function proci() {
+    var cim = "Processzorok";
+    valtoztatas(alkatrészek, procinevek, cim);
+}
+
+function alaplap() {
+    var cim = "Alaplapok";
+    valtoztatas(alkatrészek1, alaplapnevek, cim);
+}
+
+function storage() {
+    var cim = "Háttértárak";
+    valtoztatas(alkatrészek2, storagenevek, cim);
+}
+
+function psu() {
+    var cim = "Tápegységek";
+    valtoztatas(alkatrészek3, psunevek, cim);
+}
+
+function gephaz() {
+    var cim = "Gépházak";
+    valtoztatas(alkatrészek5, casenevek, cim);
+}
+
+function gpu() {
+    var cim = "Videókártyák";
+    valtoztatas(alkatrészek4, gpunevek, cim);
+}
+
+function ram() {
+    var cim = "Memória";
+    valtoztatas(alkatrészek6, ramnevek, cim);
+}
+
+function accessories() {
+    var cim = "Kiegészítők";
+    valtoztatas(kiegészítők, kiegnevek, cim);
 }
 
 var darab = 0;
@@ -580,5 +442,29 @@ function megrendel() {
     window.alert("Köszünjük a rendelését!")
 }
 
+var email = document.getElementById("emailem").value
+var jelszo = document.getElementById("jelszom").value
 
+function regist() {
+    if (email != "" && email.includes('@') && jelszo.length >= 4) {
+        window.alert("Sikeres regisztráció!")
+        document.getElementById("bejelentke").innerHTML = "Bejelentkezés"
+    }
+    else {
+        window.alert("Sikertelen bejelentkezés")
+    }
+}
+
+var email1 = document.getElementById("emailem1").value
+var jelszo1 = document.getElementById("jelszom1").value
+
+function bejelentekez() {
+
+    if (email1 != email && jelszo1 != jelszo) {
+        window.alert("Sikeretelen bejeletkezés!")
+    }
+    else {
+        window.alert("Sikeres bejelenkezés!")
+    }
+}
 
