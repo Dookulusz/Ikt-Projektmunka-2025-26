@@ -1,0 +1,109 @@
+body{
+    color: white;
+}
+#h1{
+    display: flex;
+    margin-left: 925px;
+    margin-top: 400px;
+}
+#tableinfo{
+    display: flex;
+    margin-left: 925px;
+}
+#info{
+    width: 800px;
+    height: 200px;
+}
+#info, tr, td{
+    border: solid black 2px;
+    margin-left: 570px;
+}
+#tovabb{
+    border-radius: 10%;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom right, rgb(52, 52, 212), rgb(238, 48, 48));
+}
+#button{
+    display: flex;
+    margin-left: 925px;
+    margin-top: 350px;
+}
+#dokakep{
+    width: 20px;
+    height: 20px;
+}
+#divinfo{
+    border: solid black 1.5px;
+}
+#dobaco, #leiras{
+    width: 800px;
+    border: solid black 2px;
+    margin-left: 570px;
+}
+#pfp{
+    width: 50px;
+    height: 50px;
+    border: solid grey 2px;
+}
+#cim{
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 650px;
+    height: 45px;
+    display: flex;
+    border: solid black 2px;
+
+}
+#rolunk1{
+    display: flex;
+    margin-left: 620px;
+    width: 650px;
+    margin-bottom: 100px;
+    margin-top: 0px;
+}
+#rolunk2{
+    display: flex;
+    height: 500px;
+    margin-left: 670px;
+    width: 800px;
+    margin-bottom: 100px;
+    margin-top: -100px;
+}
+#rolunktabla{
+    margin-top: 400px;
+    margin-left: 0px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    width: 600px;
+    height: 150px;
+    border: solid black 2px;
+}
+.video-fixed-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.videnyofix {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
