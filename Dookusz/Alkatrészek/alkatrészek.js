@@ -522,7 +522,7 @@ function megrendel() {
     if (email && jelszo && nev) {
         alert("Köszönjük a rendelését!")
         setTimeout(function () {
-            window.location.href = "???"
+            window.location.href = "foldal.html"
         }, 100)
     }
     else {
