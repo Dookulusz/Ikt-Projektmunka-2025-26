@@ -438,13 +438,6 @@ function gomb() {
     document.getElementById("termek").innerHTML = "Kosár: " + darab;
 }
 
-function megrendel() {
-    window.alert("Köszünjük a rendelését!")
-    setTimeout(function () {
-        window.location.href = "???"
-    }, 100); // 100ms várakozás
-}
-
 //A trim() eltávolítja a szöveg eleji és végi fölösleges szóközöket :)
 function regist() {
     var email = document.getElementById("emailem").value.trim()
@@ -520,3 +513,19 @@ window.addEventListener("DOMContentLoaded", function () {
         document.getElementById("kijelenkez").style.display = ""
     }
 })
+
+function megrendel() {
+    var email = localStorage.getItem("email")
+    var jelszo = localStorage.getItem("jelszo")
+    var nev = localStorage.getItem("nev")
+
+    if (email && jelszo && nev) {
+        alert("Köszönjük a rendelését!")
+        setTimeout(function () {
+            window.location.href = "???"
+        }, 100)
+    }
+    else {
+        alert("A rendeléshez be kell jelentkezni!")
+    }
+}
