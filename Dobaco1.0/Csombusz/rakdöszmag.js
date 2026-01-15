@@ -3,7 +3,7 @@ function Kosár()
     // Kiválasztott elemek lekérése
     let proci = document.getElementById("processzor").value || "none";
     let alaplap = document.getElementById("alaplap").value || "none";
-    let storag = document.getElementById("storig").value || "none";
+    let storag = document.getElementById("storag").value || "none";
     let caseComputer = document.getElementById("case").value || "none";
     let gpu = document.getElementById("gpu").value || "none";
     let ram = document.getElementById("ram").value || "none";
