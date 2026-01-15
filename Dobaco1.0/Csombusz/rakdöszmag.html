@@ -120,7 +120,8 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <select name="" id="">
+                    <p>Milyen legyen a PSU?</p>
+                    <select name="psu" id="psu">
                         <option value="bequiet850">bequiet850</option>
                         <option value="corsair650">corsair650</option>
                         <option value="fspvitan">fspvitan</option>
@@ -141,8 +142,11 @@
             </div>
             <div id="kosba" class="row">
                 <div class="col">
-                    <input type="submit" onclick="kosár()" value="Kosárba teszem">
+                    <input type="submit" onclick="Kosár()" value="Kosárba teszem">
                 </div>
+            </div>
+            <div class="row">
+                <div class="col"><div id="összeg"></div></div>
             </div>
 
         </div>
