@@ -49,7 +49,7 @@
         <div class="row">
             <div class="col">
                 <p>Milyen processzort szeretnél?</p>
-                <select name="processzor" id="processzor">
+                <select name="processzor" id="processzor" onchange="Kosár()">
                     <option value="">Nincs kiválasztott termék</option>
                     <option value="ryzen99950x3d">ryzen99950x3d</option>
                     <option value="ryzen99950x">ryzen99950x</option>
@@ -65,7 +65,7 @@
             </div>
             <div class="col">
                 <p>Milyen alaplapot szeretnél?</p>
-                <select name="alaplap" id="alaplap">
+                <select name="alaplap" id="alaplap" onchange="Kosár()">
                     <option value="">Nincs kiválasztott termék</option>
                     <option value="gigab650">gigab650</option>
                     <option value="msimagz890w">msimagz890w</option>
@@ -78,7 +78,7 @@
         <div class="row">
             <div class="col">
                 <p>Milyen storage legyen?</p>
-                <select name="storage" id="storage">
+                <select name="storage" id="storage" onchange="Kosár()">
                     <option value="">Nincs kiválasztott termék</option>
                     <option value="kinston1tb">kinston1tb</option>
                     <option value="samsung25">samsung25</option>
@@ -89,7 +89,7 @@
             </div>
             <div class="col">
                 <p>Milyen legyen a gépház?</p>
-                <select name="case" id="case">
+                <select name="case" id="case" onchange="Kosár()">
                     <option value="">Nincs kiválasztott termék</option>
                     <option value="nzxt1">nzxt1</option>
                     <option value="nzxt2">nzxt2</option>
@@ -102,7 +102,7 @@
         <div class="row">
             <div class="col">
                 <p>Milyen legyen a GPU?</p>
-                <select name="gpu" id="gpu">
+                <select name="gpu" id="gpu" onchange="Kosár()">
                     <option value="">Nincs kiválasztott termék</option>
                     <option value="rtx5070ti">rtx5070ti</option>
                     <option value="rx9060xt">rx9060xt</option>
@@ -113,7 +113,7 @@
             </div>
             <div class="col">
                 <p>Milyen legyen a RAM?</p>
-                <select name="ram" id="ram">
+                <select name="ram" id="ram" onchange="Kosár()">
                     <option value="">Nincs kiválasztott termék</option>
                     <option value="kingstoneram5">kingstoneram5</option>
                     <option value="kingstoneram4">kingstoneram4</option>
@@ -126,7 +126,7 @@
         <div class="row">
             <div class="col">
                 <p>Milyen legyen a PSU?</p>
-                <select name="psu" id="psu">
+                <select name="psu" id="psu" onchange="Kosár()">
                     <option value="">Nincs kiválasztott termék</option>
                     <option value="bequiet850">bequiet850</option>
                     <option value="corsair650">corsair650</option>
@@ -137,7 +137,7 @@
             </div>
             <div class="col">
                 <p>Milyen egyéb dolgokra lenne szükséged?</p>
-                <select name="egyeb" id="egyeb">
+                <select name="egyeb" id="egyeb" onchange="Kosár()">
                     <option value="">Nincs kiválasztott termék</option>
                     <option value="kabel">kábel</option>
                     <option value="extssd">extssd</option>
@@ -145,11 +145,6 @@
                     <option value="egbillkomb">egér, billentyűzet</option>
                     <option value="hang">hang</option>
                 </select>
-            </div>
-        </div>
-        <div id="kosba" class="row">
-            <div class="col">
-                <input type="submit" onclick="Kosár()" value="Kosárba teszem">
             </div>
         </div>
         <div class="row">

@@ -48,3 +48,9 @@ p{
 #kosba{
     margin-top: 50px;
 }
+
+#összeg{
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-top: 30px;
+}
