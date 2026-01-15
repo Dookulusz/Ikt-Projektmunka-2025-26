@@ -29,10 +29,6 @@ body {
     background-color: rgb(180, 75, 0);
 }
 
-form{
-    text-align: center;
-}
-
 select{
     width: 200px;
     height: 60px;
