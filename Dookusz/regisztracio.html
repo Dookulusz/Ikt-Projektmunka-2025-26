@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Dookusz/alkatrészek.css">
+    <title>Dobaco</title>
+</head>
+
+<body>
+    <div class="video-fixed-bg">
+        <video autoplay muted loop playsinline class="videnyofix">
+            <source src="../Dookusz/video/Háttér.mp4" type="video/mp4">
+        </video>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../Borka/fooldal.html">Dobaco</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Dookusz/alkatrészek.html">Alkatrészek</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Csombusz/rakdöszmag.html">Rakd össze magadnak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Csombusz/szakseggmen.html">Szakértői segítség</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Borka/fooldal.html#leiras">Rólunk</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid keretes" id="dobozos">
+        <div class="row">
+            <div class="col">
+                <h1>Regisztráció</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="mb-3">
+                    <label for="nevem" class="form-label">Név</label>
+                    <input type="email" class="form-control" id="nevem" placeholder="Nagy Sándor">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="mb-3">
+                    <label for="emailem" class="form-label">E-mail cím</label>
+                    <input type="email" class="form-control" id="emailem" placeholder="szeretemacicakat67@gmail.com"
+                        required>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="jelszom" class="form-label">Jelszó</label>
+                <input type="password" id="jelszom" class="form-control" aria-describedby="passwordHelpBlock"
+                    placeholder="valami123 (legalább 4 karakter)" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col m-4 mx-auto text-center">
+                <button type="button" class="btn" id="megrendelgomb" onclick="regist()">Regisztráció</button>
+            </div>
+        </div>
+    <script src="../Dookusz/alkatrészek.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
