@@ -34,10 +34,18 @@ div{
 }
 
 .plachold{
-    margin-top: 10%;
+    margin-top: 12%;
 }
 
 textarea{
     background-color: black;
     color: white;
+}
+
+textarea::placeholder {
+    padding: 14%;
+    color: white !important;
+    opacity: 1 !important;
+    text-align: center;
+    font-weight: bolder;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="szakseggmen.css">
     <link rel="stylesheet" href="navbar.css">
 </head>
+
 <body>
     <div class="video-fixed-bg">
         <video autoplay muted loop playsinline class="videnyofix">
@@ -18,7 +20,7 @@
 
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../../Borka/fooldal.html">Dobaco</a>
+            <a class="navbar-brand" href="../Borka/fooldal.html">Dobaco</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -26,30 +28,37 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="../Alkatrészek/alkatrészek.html">Alkatrészek</a>
+                        <a class="nav-link" href="../Dookusz/Alkatrészek/alkatrészek.html">Alkatrészek</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../../Csombusz/rakdöszmag.html">Rakd össze magadnak</a>
+                        <a class="nav-link" href="rakdöszmag.html">Rakd össze magadnak</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../../Csombusz/szakseggmen.html">Szakértői segítség</a>
+                        <a class="nav-link" href="#enyem2">Szakértői segítség</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../../Borka/fooldal.html#leiras">Rólunk</a>
+                        <a class="nav-link" href="../Borka/fooldal.html">Rólunk</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="plachold">
-        <h1>Kérdésed van?</h1>
-        <textarea name="segítség" id="segítség" cols="100" rows="10"
-        placeholder="Ha panasza van, vagy csupán segítséget akar kérni, akkor it tud!"></textarea>
+    <div class="container plachold" id="enyem2">
+        <div class="row">
+            <div class="col-12 col-md-8 col-lg-6 mx-auto">
+                <h1 id="kerdes">Kérdésed van?</h1>
+                <textarea class="form-control bg-dark text-white" name="segítség" id="segítség" rows="10"
+                    placeholder="Ha panasza van, vagy csupán segítséget akar kérni, akkor it tud!"></textarea>
+                <button type="submit" id="kuld" class="btn btn-warning mt-3" onclick="Beszót()">Küldés</button>
+            </div>
+        </div>
     </div>
 
+    <script src="szakseggmen.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script> 
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
