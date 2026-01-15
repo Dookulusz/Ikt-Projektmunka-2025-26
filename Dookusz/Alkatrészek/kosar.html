@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 
 <head>
     <meta charset="UTF-8">
@@ -11,13 +11,11 @@
 </head>
 
 <body>
-
     <div class="video-fixed-bg">
         <video autoplay muted loop playsinline class="videnyofix">
             <source src="../video/Háttér.mp4" type="video/mp4">
         </video>
     </div>
-
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="../../Borka/fooldal.html">Dobaco</a>
@@ -43,7 +41,6 @@
             </div>
         </div>
     </nav>
-
     <div class="container-fluid">
         <div class="row align-items-center keret">
             <div class="col-12 col-md-6 col-lg-4" id="kosaras">
@@ -116,17 +113,17 @@
                     <div class="col-8">Ryzen 9. generáció</div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 text-center">
-                <p id="nev11">Ryzen 9 9950X3d</p>
-                <p id="ar11">269 990 Ft</p>
-                <button type="button" class="btn" id="visszagomb"><a href="../Alkatrészek/alkatrészek.html">Vissza</a></button>
-                <button type="button" class="btn" id="megrendelgomb" onclick="megrendel()">Megrendelés</button>
+            <div class="col-12 col-md-6 col-lg-4 text-center mx-auto">
+                <p class="szöveg" id="nev11">Ryzen 9 9950X3D</p>
+                <p class="szöveg" id="ar11">269 990 Ft</p>
+                <button type="button" class="btn" id="visszagomb"><a
+                        href="../Alkatrészek/alkatrészek.html">Vissza</a></button>
+                <button type="button" class="btn" id="megrendelgomb" onclick="megrendel()">Megrendelés</button><br><br>
                 <p><a id="fiokletrehoz" href="../Alkatrészek/regisztracio.html">Nincsen még fiókja</a></p>
-                <p><a id="Bejelenkez"  href="../Alkatrészek/bejelentkezes.html">bejelentkezes</a></p>
+                <p><a id="Bejelenkez" href="../Alkatrészek/bejelentkezes.html">Bejelentkezes</a></p>
+                <button type="button" class="btn text-body bg-danger" id="kijelenkez"
+                    onclick="kijelentkez()">Kijelentekezés</button>
             </div>
-
-
-
         </div>
         <script src="alkatrészek.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

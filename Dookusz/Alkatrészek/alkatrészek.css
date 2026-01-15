@@ -65,7 +65,6 @@ body {
 
 h1 {
     text-align: center;
-    margin: 10px;
 }
 
 .btn {
@@ -74,7 +73,7 @@ h1 {
 
 .btn:hover {
     color: gray;
-} 
+}
 
 #termek {
     float: right;
@@ -87,23 +86,31 @@ h1 {
 #kep11 {
     width: 80%;
     height: auto;
+    border-radius: 4%;
 }
 
 #megrendelgomb {
     background-color: rgb(14, 163, 0);
 }
 
+#megrendelgomb:hover {
+    color: rgb(67, 66, 65);
+}
+
 #visszagomb {
     background-color: rgb(0, 121, 158);
 }
 
-a, a:hover {
+
+a,
+a:hover {
     text-decoration: none;
     color: white;
 }
 
 #fiokletrehoz {
-    color: rgb(86, 86, 86);
+    color: rgb(127, 121, 121);
+    font-size: large;
 }
 
 #bejelentkez {
@@ -128,4 +135,8 @@ a, a:hover {
 #regiszt {
     background-color: aquamarine;
     text-align: center;
+}
+
+.szöveg {
+    font-size: xx-large;
 }

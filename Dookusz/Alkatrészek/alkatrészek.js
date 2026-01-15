@@ -364,40 +364,40 @@ var kiegnevek = [
 function valtoztatas(tömb, lista, cím) {
 
     for (var i = 0; i < lista.length; i++) {
-        var listanev = lista[i];
-        var pocok = tömb[listanev];
+        var listanev = lista[i]
+        var pocok = tömb[listanev]
 
         var index = i + 1;
 
-        var kep = document.getElementById('kep' + index);
-        var nev = document.getElementById('nev' + index);
-        var ar = document.getElementById('ar' + index);
+        var kep = document.getElementById('kep' + index)
+        var nev = document.getElementById('nev' + index)
+        var ar = document.getElementById('ar' + index)
 
-        if (kep) kep.src = pocok.kep;
-        if (nev) nev.innerHTML = pocok.nev;
-        if (ar) ar.innerHTML = pocok.ar;
+        if (kep) kep.src = pocok.kep
+        if (nev) nev.innerHTML = pocok.nev
+        if (ar) ar.innerHTML = pocok.ar
     }
 
     for (var i = 0; i <= 10; i++) {
         if (i > 5 && tömb != alkatrészek) {
-            document.getElementById(i).style.display = "none";
+            document.getElementById(i).style.display = "none"
         }
         else if (tömb == alkatrészek && i > 5) {
-            document.getElementById(i).style.display = "";
+            document.getElementById(i).style.display = ""
         }
     }
 
-    document.getElementById("hedvig").innerHTML = cím;
+    document.getElementById("hedvig").innerHTML = cím
 }
 
 function proci() {
     var cim = "Processzorok";
-    valtoztatas(alkatrészek, procinevek, cim);
+    valtoztatas(alkatrészek, procinevek, cim)
 }
 
 function alaplap() {
     var cim = "Alaplapok";
-    valtoztatas(alkatrészek1, alaplapnevek, cim);
+    valtoztatas(alkatrészek1, alaplapnevek, cim)
 }
 
 function storage() {
@@ -434,37 +434,89 @@ var darab = 0;
 
 function gomb() {
     darab = darab + 1;
-    window.alert("Termék hozzáadása a kosárba")
+    window.alert("Termék hozzáadása a kosárba");
     document.getElementById("termek").innerHTML = "Kosár: " + darab;
 }
 
 function megrendel() {
     window.alert("Köszünjük a rendelését!")
+    setTimeout(function () {
+        window.location.href = "???"
+    }, 100); // 100ms várakozás
 }
 
-var email = document.getElementById("emailem").value
-var jelszo = document.getElementById("jelszom").value
-
+//A trim() eltávolítja a szöveg eleji és végi fölösleges szóközöket :)
 function regist() {
-    if (email != "" && email.includes('@') && jelszo.length >= 4) {
+    var email = document.getElementById("emailem").value.trim()
+    var jelszo = document.getElementById("jelszom").value.trim()
+    var nev = document.getElementById("nevem").value.trim()
+
+    if (email !== "" && email.includes("@") && jelszo.length >= 4) {
+        localStorage.setItem("email", email)
+        localStorage.setItem("jelszo", jelszo)
+        localStorage.setItem("nev", nev)
+
         window.alert("Sikeres regisztráció!")
-        document.getElementById("bejelentke").innerHTML = "Bejelentkezés"
+        setTimeout(function () {
+            window.location.href = "../Alkatrészek/bejelentkezes.html"
+        }, 100); // 100ms várakozás
+    } else {
+        window.alert("Hiba")
+    }
+}
+
+//Üdvözlök mindenkit!
+
+//Elég nagy poén az hogy itt nézem a kódot hogy mi a baj hogy nem megy a bejelentkezés és kiderült
+//hogy az volt a gond hogy nem ugyanazt írtam be kétszer
+//én meg csodálkoztam hogy miért nem működik XD! (+1 indok hogy miért nem jó betegen kódolni :) )
+
+//A localstorage nem az én művem viszont maga az ötlet igen. 
+function bejelentekez() {
+    var emailertek = document.getElementById("emailem1").value.trim()
+    var jelszoertek = document.getElementById("jelszom1").value.trim()
+
+    var emailes = localStorage.getItem("email")
+    var jelszos = localStorage.getItem("jelszo")
+
+    if (!emailes || !jelszos) {
+        window.alert("Nincs regisztrált fiókja!")
+        return
+        // A return azért kell nekem hogy ne írja ki a nincs fiók
+        //  után egybőé azt hogy sikertelen bejelentkezés :)
+    }
+
+    if (emailertek === emailes && jelszoertek === jelszos) {
+        window.alert("Sikeres bejelentkezés!");
+        setTimeout(function () {
+            window.location.href = "../Alkatrészek/kosar.html"
+        }, 100); // 100ms várakozás
     }
     else {
         window.alert("Sikertelen bejelentkezés")
     }
 }
 
-var email1 = document.getElementById("emailem1").value
-var jelszo1 = document.getElementById("jelszom1").value
+function kijelentkez() {
+    //ez a localstorage minden elemét törli (sajnos ha kijelentkezünk akkor újra kell regisztrálni de most ez van :/)
+    localStorage.clear()
+    document.getElementById("fiokletrehoz").style.display = ""
+    document.getElementById("Bejelenkez").innerHTML = "Bejelentkezés"
+    document.getElementById("kijelenkez").style.display = "none"
 
-function bejelentekez() {
-
-    if (email1 != email && jelszo1 != jelszo) {
-        window.alert("Sikeretelen bejeletkezés!")
-    }
-    else {
-        window.alert("Sikeres bejelenkezés!")
-    }
 }
 
+document.getElementById("kijelenkez").style.display = "none"
+
+window.addEventListener("DOMContentLoaded", function () {
+    var email = localStorage.getItem("email")
+    var jelszo = localStorage.getItem("jelszo")
+    var nev = localStorage.getItem("nev")
+
+    // Csak akkor fut le ha van bejelentkezett felhasználó
+    if (email && jelszo && nev) {
+        document.getElementById("Bejelenkez").innerHTML = "Üdvözöljük: " + nev
+        document.getElementById("fiokletrehoz").style.display = "none"
+        document.getElementById("kijelenkez").style.display = ""
+    }
+})
