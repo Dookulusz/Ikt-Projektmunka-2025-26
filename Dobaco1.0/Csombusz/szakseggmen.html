@@ -42,14 +42,21 @@
         </div>
     </nav>
 
-    <div class="plachold" id="enyem2">
-        <h1>Kérdésed van?</h1>
-        <textarea name="segítség" id="segítség" cols="100" rows="10"
-        placeholder="Ha panasza van, vagy csupán segítséget akar kérni, akkor it tud!"></textarea>
-    </div>
+    <form>
+        <div class="container plachold" id="enyem2">
+            <div class="row">
+                <div class="col-12 col-md-8 col-lg-6 mx-auto">
+                    <h1>Kérdésed van?</h1>
+                    <textarea class="form-control bg-dark text-white" name="segítség" id="segítség" rows="10"
+                        placeholder="Ha panasza van, vagy csupán segítséget akar kérni, akkor it tud!"></textarea>
+                    <button type="submit" id="kuld" class="btn btn-warning mt-3">Küldés</button>
+                </div>
+            </div>
+        </div>
+    </form>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script> 
+        crossorigin="anonymous"></script>
 </body>
 </html>
